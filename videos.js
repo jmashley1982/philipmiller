@@ -2,7 +2,8 @@
 //
 // To add a track, copy its video ID from the YouTube URL
 // (https://www.youtube.com/watch?v=VIDEO_ID) and add an entry below.
-// The newest track should go first. "date", "note" and "buy" are optional.
+// The newest track should go first. "date", "tag", "note" and "buy" are optional.
+// "tag" is the little sticker on the card.
 //
 // Example:
 //   { id: "VIDEO_ID", title: "Song Title", date: "2026-01-31", note: "Optional line or two.", buy: "https://music.apple.com/..." },
@@ -13,6 +14,7 @@
 window.PM_VIDEOS = [
   {
     "id": "XPbE5W4IaNs",
+    "tag": "Brand new",
     "title": "Don't Mess Around",
     "date": "2026-10-02",
     "note": "from despair to gain / is a harsh land to cover",
@@ -20,6 +22,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "Iz-yo3NmUtU",
+    "tag": "Contains pyramids",
     "title": "Got Too Far To Go",
     "date": "2026-08-14",
     "note": "Egypt, in the time of the land of the Pharaohs…",
@@ -27,6 +30,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "XdvZhs4Ufco",
+    "tag": "Soccer anthem",
     "title": "Gonna Get It",
     "date": "2026-07-10",
     "note": "In the Spirit of Soccer",
@@ -34,6 +38,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "R56Gafv7jhA",
+    "tag": "Supercars",
     "title": "Why Ya Wanna Keep Me Waiting",
     "date": "2026-06-05",
     "note": "Going around town / Got lots to do",
@@ -41,6 +46,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "xtdRMTV_hMU",
+    "tag": "Last train token",
     "title": "No Let Up",
     "date": "2026-04-24",
     "note": "It's an ill wind that lifts / When you face life and it drifts",
@@ -48,6 +54,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "B-03BPziMAg",
+    "tag": "Behind the scenes",
     "title": "Rehearsal",
     "date": "2026-04-17",
     "note": "Bonus track: behind-the-scenes rehearsal footage from the making of the music videos.",
@@ -55,6 +62,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "3uUHoz857eY",
+    "tag": "From the heart",
     "title": "Missing You",
     "date": "2026-03-07",
     "note": "everyone we know will one day not be here / we can learn a little now for when that appears",
@@ -62,6 +70,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "4a0jcn76nbc",
+    "tag": "Pandora Box",
     "title": "Katie's Got It",
     "date": "2026-01-28",
     "note": "Ever wondered what happened to that “Pandora Box” you got off the internet long ago, but never looked inside?",
@@ -69,6 +78,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "pGrDO-a8qaA",
+    "tag": "Stonehenge ghosts",
     "title": "Hot Ticket",
     "date": "2026-01-16",
     "note": "“You’re LIVE on Glast-On-Bury FM, please do not swear! What’s your name and where are you from?”",
@@ -76,6 +86,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "S2ZdC6BGt5k",
+    "tag": "Showgirls",
     "title": "Rock the Night",
     "date": "2025-11-30",
     "note": "Some days you just miss the last showgirl / by evening have to find a few more",
@@ -83,6 +94,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "vbQSAJsdq3M",
+    "tag": "Based on real events",
     "title": "Shadows Desire",
     "date": "2025-10-31",
     "note": "National Stunner Computer Profile Program: online.",
@@ -90,6 +102,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "xG0LcVdriYM",
+    "tag": "Gyrocopter",
     "title": "Closing Bell",
     "date": "2025-09-12",
     "note": "End of Work Schedule for a week / The month's plane comes in",
@@ -97,6 +110,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "umEUYnLkrE8",
+    "tag": "Ferrari F430",
     "title": "Taking Advantage",
     "date": "2025-08-01",
     "note": "Garage: ON. / Load: Arcade “OUTRUN. REAL WORLD DRIVE”",
@@ -104,6 +118,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "mBXso7dIusk",
+    "tag": "Zoofari",
     "title": "What Ya Got",
     "date": "2025-07-11",
     "note": "Zoofari: a storm had been raging for days…",
@@ -111,6 +126,7 @@ window.PM_VIDEOS = [
   },
   {
     "id": "lU1bXpnSA5s",
+    "tag": "Starring Fred",
     "title": "Getting On Edge",
     "date": "2025-06-23",
     "note": "“Fred, stop swerving. Did you get our tickets?” / “Yes, and the beer is great!”",
