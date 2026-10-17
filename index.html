@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Philip Miller — Fan Site</title>
+  <meta name="description" content="An unofficial fan site for Philip Miller, an independent artist making indie pop electronic music.">
+  <meta property="og:title" content="Philip Miller — Fan Site">
+  <meta property="og:description" content="Indie pop electronic music from an artist more people should know about.">
+  <meta name="theme-color" content="#0d0b1e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d0b1e'/%3E%3Crect x='7' y='14' width='3' height='11' rx='1.5' fill='%23ff4fa3'/%3E%3Crect x='12.5' y='8' width='3' height='17' rx='1.5' fill='%23b77bff'/%3E%3Crect x='18' y='11' width='3' height='14' rx='1.5' fill='%2342e3ff'/%3E%3Crect x='23.5' y='17' width='3' height='8' rx='1.5' fill='%23ff4fa3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#listen">Skip to the music</a>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Philip Miller fan site, home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      Philip Miller
+    </a>
+    <nav aria-label="Sections">
+      <a href="#listen">Listen</a>
+      <a href="#tracks">Tracks</a>
+      <a href="#about">About</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <p class="eyebrow">An unofficial fan site</p>
+      <h1>Philip Miller</h1>
+      <p class="tagline">Indie pop electronic music from an artist more people should know about.</p>
+      <div class="eq" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="cta">
+        <a class="btn btn-primary" href="#listen">Start listening</a>
+        <a class="btn" href="https://www.youtube.com/channel/UCAe8ekEogKjd7Gxz5CD2FOQ?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a>
+      </div>
+    </section>
+
+    <section id="listen" class="section">
+      <div class="section-head">
+        <h2>Listen</h2>
+        <p id="now-playing" class="muted" aria-live="polite">Playing every upload from the channel</p>
+      </div>
+      <div class="player">
+        <iframe id="player"
+          src="https://www.youtube-nocookie.com/embed/videoseries?list=UUAe8ekEogKjd7Gxz5CD2FOQ&rel=0"
+          title="Philip Miller on YouTube"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="tracks" class="section">
+      <div class="section-head">
+        <h2>Tracks</h2>
+        <p class="muted">Pick a song to play it above.</p>
+      </div>
+      <ol id="track-grid" class="grid"></ol>
+      <div id="tracks-empty" class="empty" hidden>
+        <p>The full track list lives on the channel. The player above runs through every upload in order.</p>
+        <a class="btn" href="https://www.youtube.com/channel/UCAe8ekEogKjd7Gxz5CD2FOQ/videos" target="_blank" rel="noopener">Browse all videos</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About</h2>
+      <div class="about-body">
+        <p class="lead">Philip Miller releases original album tracks in the classic style of indie pop electronic music.</p>
+        <p>The songs are shared on YouTube, where they haven't yet found the audience they deserve. This site is one fan's attempt to give them a home and point a few more people toward them.</p>
+        <p class="note">Not to be confused with the South African composer of the same name, or with Phil Miller, the Canterbury-scene guitarist.</p>
+      </div>
+    </section>
+
+    <section id="support" class="section">
+      <h2>How to support Philip</h2>
+      <ul class="cards">
+        <li>
+          <h3>Subscribe</h3>
+          <p>Subscribing tells YouTube to recommend the music to more listeners.</p>
+          <a href="https://www.youtube.com/channel/UCAe8ekEogKjd7Gxz5CD2FOQ?sub_confirmation=1" target="_blank" rel="noopener">Subscribe →</a>
+        </li>
+        <li>
+          <h3>Like and comment</h3>
+          <p>A few kind words under a video go a long way for an independent artist.</p>
+          <a href="https://www.youtube.com/channel/UCAe8ekEogKjd7Gxz5CD2FOQ/videos" target="_blank" rel="noopener">Open the videos →</a>
+        </li>
+        <li>
+          <h3>Share a song</h3>
+          <p>Send your favourite track to a friend who likes synth-pop.</p>
+          <button type="button" class="link-btn" id="share-btn">Copy this site's link →</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>An unofficial fan site, not affiliated with Philip Miller. All music and videos belong to the artist and are embedded from YouTube.</p>
+  </footer>
+
+  <script src="videos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
