@@ -21,6 +21,7 @@
   } else {
     videos.forEach((video, i) => {
       const li = document.createElement("li");
+      li.className = "track-card";
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "track";
@@ -53,6 +54,27 @@
       });
 
       li.append(btn);
+
+      if (video.date || video.buy) {
+        const meta = document.createElement("div");
+        meta.className = "track-meta";
+        if (video.date) {
+          const time = document.createElement("time");
+          time.dateTime = video.date;
+          time.textContent = new Date(video.date + "T12:00:00").toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+          meta.append(time);
+        }
+        if (video.buy) {
+          const buy = document.createElement("a");
+          buy.href = video.buy;
+          buy.target = "_blank";
+          buy.rel = "noopener";
+          buy.textContent = "Get the single →";
+          buy.setAttribute("aria-label", "Get " + video.title + " on Apple Music");
+          meta.append(buy);
+        }
+        li.append(meta);
+      }
       grid.append(li);
     });
   }
