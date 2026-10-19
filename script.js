@@ -25,11 +25,12 @@
     toastTimer = setTimeout(() => { toastEl.hidden = true; }, 3500);
   }
 
-  function play(video, autoplay) {
-    const params = "rel=0" + (autoplay ? "&autoplay=1" : "");
-    player.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(video.id) + "?" + params;
+  // Load the video without autoplay: YouTube only reliably counts a view
+  // when the visitor presses play in the player themselves.
+  function load(video) {
+    player.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(video.id) + "?rel=0";
     player.title = video.title + " by Philip Miller";
-    nowPlaying.textContent = "Now playing: " + video.title;
+    nowPlaying.textContent = "Loaded: " + video.title + " · press play";
     grid.querySelectorAll(".track").forEach((btn) => {
       btn.classList.toggle("is-playing", btn.dataset.id === video.id);
     });
@@ -65,7 +66,7 @@
 
       btn.append(screen, label);
       btn.addEventListener("click", () => {
-        play(video, true);
+        load(video);
         document.getElementById("listen").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
       });
       li.append(btn);

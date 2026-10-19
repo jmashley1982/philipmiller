@@ -54,6 +54,50 @@ a { color: inherit; }
 .blink { animation: blink 1s steps(2, start) infinite; }
 @keyframes blink { to { visibility: hidden; } }
 
+/* ---------- Fan site notices ---------- */
+.fan-strip {
+  margin: 0;
+  padding: 6px 16px;
+  text-align: center;
+  background: var(--pink);
+  color: #fff;
+  font-family: var(--font-pixel);
+  font-size: 0.55rem;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+.brand-tag {
+  padding: 3px 7px;
+  border-radius: 6px;
+  background: var(--yellow);
+  color: #120626;
+  font-family: var(--font-pixel);
+  font-size: 0.48rem;
+  text-transform: uppercase;
+}
+.fan-badge {
+  display: inline-block;
+  margin: 18px 0 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(18, 6, 38, 0.7);
+  border: 2px solid var(--yellow);
+  color: var(--yellow);
+  font-family: var(--font-pixel);
+  font-size: clamp(0.5rem, 1.6vw, 0.65rem);
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+}
+.official-note {
+  margin: 40px 0 0;
+  padding: 16px 20px;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+.official-note a, .disclaimer a { color: var(--cyan); font-weight: 700; }
+.disclaimer strong { color: var(--text); }
+
 /* ---------- Nav ---------- */
 .nav {
   position: sticky;
@@ -230,6 +274,7 @@ a { color: inherit; }
 .tagline span {
   color: var(--yellow);
   font-style: italic;
+  text-shadow: 0 0 2px #120626, 0 0 4px #120626, 0 2px 12px #120626;
 }
 
 .cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 34px; }
@@ -475,7 +520,7 @@ a { color: inherit; }
 .track:hover .tape-play, .track:focus-visible .tape-play { opacity: 1; }
 .track.is-playing .tape-play { opacity: 1; font-size: 0; }
 .track.is-playing .tape-play::after {
-  content: "NOW PLAYING";
+  content: "ON THE TV";
   font-family: var(--font-pixel);
   font-size: 0.6rem;
   padding: 6px 8px;
